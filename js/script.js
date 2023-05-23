@@ -1,4 +1,4 @@
-var buttonPaper, buttonRock, buttonScissors;
+let buttonPaper, buttonRock, buttonScissors;
 // tu będą wymienione pozostałe zmienne guzików, np. buttonRock
 
 buttonRock = document.getElementById('button-rock');
@@ -9,7 +9,6 @@ buttonScissors = document.getElementById('button-scissors');
 
 function buttonClicked(argButtonName) {
     clearMessages();
-    console.log(argButtonName + ' został kliknięty');
     printMessage(displayResult(argButtonName));
 }
 
@@ -22,6 +21,3 @@ buttonPaper.addEventListener('click', function () {
 buttonScissors.addEventListener('click', function () {
     buttonClicked('nożyce')
 });
-
-// tu będą kolejne powiązania guzików z funkcją buttonClicked
-// (każda z innym argumentem)
